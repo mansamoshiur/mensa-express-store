@@ -1,11 +1,12 @@
 import { Urbanist } from "next/font/google";
-
+import "slick-carousel/slick/slick.css";
 import ToastProvider from "@/providers/toast-provider";
-import Footer from "@/components/footer";
+import ModalProvider from "@/providers/modal-provider";
 
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
-import ModalProvider from "@/providers/modal-provider";
+import Footer from "@/components/footer";
+import Banner from "@/components/banner";
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <NavBar />
         <ToastProvider />
         <ModalProvider />
+        <Banner  />
         {children}
         <Footer />
       </body>

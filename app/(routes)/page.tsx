@@ -1,5 +1,5 @@
 import getProducts from "@/actions/get-products";
-import Banner from "@/components/banner";
+// import Banner from "@/components/banner";
 import ProductsList from "@/components/products-list";
 import Container from "@/components/ui/container";
 

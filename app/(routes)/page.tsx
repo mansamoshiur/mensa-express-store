@@ -9,7 +9,7 @@ const HomePage = async () => {
   return (
     <Container>
       <div>
-        <Banner />
+{/*         <Banner /> */}
         <ProductsList title="Featured Products" items={products} />
       </div>
     </Container>

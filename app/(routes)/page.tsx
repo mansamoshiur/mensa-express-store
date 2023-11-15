@@ -1,4 +1,5 @@
 import getProducts from "@/actions/get-products";
+import Banner from "@/components/banner";
 import ProductsList from "@/components/products-list";
 import Container from "@/components/ui/container";
 
@@ -8,6 +9,7 @@ const HomePage = async () => {
   return (
     <Container>
       <div>
+        <Banner />
         <ProductsList title="Featured Products" items={products} />
       </div>
     </Container>

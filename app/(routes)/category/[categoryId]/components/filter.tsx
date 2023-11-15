@@ -27,7 +27,7 @@ const Filter = ({ data, name, valueKey }: FilterProps) => {
     if (current[valueKey] === id) {
       query[valueKey] = null;
     }
-    
+
     const url = qs.stringifyUrl(
       {
         url: window.location.href,
